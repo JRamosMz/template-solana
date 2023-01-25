@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Bonfida</title>
+    <link rel="stylesheet" href="cart-css.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="content-nav" id="cont-nav">
+                <div class="nav-logo">
+                    <img src="../imgs/logo.svg" alt="" class="logo-img">
+                    <p class="logo-name">Bonfida</p>
+                </div>
+                <div class="content-list">
+                    <ul class="list-menu">
+                        <div class="menuBrowse">
+                            <a href="#" class="enlace" onclick="toggleAper()">Browse domains</a>
+                            <div class="menu-hidden" id="enlaceBrowse">
+                                <a href="#">
+                                    <h3>Categories</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Listed</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Autocioned</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Stastics</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="enlace">Learn</a>
+                        <a href="#" class="enlace">Build</a>
+                        <a href="#" class="enlace">Community</a>
+                        <a href="#" class="enlace">Twitter</a>
+                    </ul>
+                </div>
+                <div class="botones">
+                    <div class="buscador"><input type="text" class="buscador-letter"><img src="../imgs/search.svg"
+                            alt="">
+                    </div>
+                    <hr>
+                    <button class="campana"><img src="../imgs/campana.svg" alt=""></button>
+                    <hr>
+                    <div class="content-wallet"><button class="boton-conectWallet" onclick="conectWallet()">Connect Walltet</button></div>
+                    <div class="border-carrito_comprar">
+                        <button class="carrito"><img src="../imgs/carrito.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="small-screen" id="small_creen">
+            <div class="content-small_screen">
+                <div class="ent-small_screen">
+                    <button class="salir-small_screen" onclick="salir_small_screen()">X</button>
+                    <h3 class="title-small_screen">You'll need a wallet on <br>Solana to continue</h3>
+                </div>
+                <img src="../imgs/Captura de pantalla 2023-01-23 155123.png" alt="" class="img-small_screen">
+                <button class="button-small_screen">Get started</button>
+                <a href="#" class="options-small_screen">Already have a wallet? View options <div class="triangulo"></div></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-one">
+            <div class="banner">
+                <div class="content-banner">
+                    <img src="../imgs/eclair.24f65abe.svg" alt="">
+                    <div class="title">
+                        <h2>Act fast before someone else does</h2>
+                        <p>Nothing’s worse than someone else owning your domain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <div class="your-cart">
+                    <div class="general-titles">
+                        <h1>Your cart</h1>
+                        <span>Empty cart</span>
+                    </div>
+                    <p class="general-info_text"><img src="../imgs/info-back.svg" alt="">You won’t be able to change the
+                        storage size after registration
+                    </p>
+                    <div class="element-comprar" id="comprar-este">
+                        <div class="details_element-comprar">
+                            <div class="circle-gradient"></div>
+                            <div class="element-comprar_title">
+                                <h1>sirenirk.sol</h1>
+                                <p>Storage1KB <img src="../imgs/question-mark.6de1ad92.svg" alt=""> <a href="#">Edit</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="element-valor">
+                            <img src="../imgs/logo.png" alt="" style="height: 20px;">
+                            <h2>20 USDC</h2>
+                            <div class="element-remove" onclick="mover_trash()">X</div>
+                        </div>
+                    </div>
+                    <hr class="divid-1">
+                </div>
+                <div class="mx-money">
+                    <div class="money">
+                        <div class="content-money">
+                            <h1 class="content-title_money">Order Summary</h1>
+                            <hr class="divid-1">
+                            <div>
+                                <div class="sub-total"><span class="greyT">Subtotal</span><span>20</span></div>
+                                <div class="gast-total"><span class="greyS">Gas cost</span><span>0.008 SOL</span></div>
+                            </div>
+                            <hr class="divid-1">
+                            <div class="total-ds">
+                                <div class="letter-total">Total</div>
+                                <div class="ds">
+                                    <span>20 USDC</span>
+                                    <span>0.008 SOL</span>
+                                </div>
+                            </div>
+                            <button class="money-button_confirm">Checkout</button>
+                        </div>
+                    </div>
+                    <p class="in-text_here">Need more tokens? Get it <a href="#">here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-two">
+            <div class="content-section_two">
+                <h3 class="title-section_two">Benefits of a.sol domain</h3>
+                <div class="content-pits">
+                    <div class="pits">
+                        <img src="../imgs/rayo_yellow.webp" alt="">
+                        <p>Quickly send and receive funds to a human-readable address</p>
+                    </div>
+                    <div class="pits">
+                        <img src="../imgs/mundi_blue.webp" alt="">
+                        <p>Host projects with your unique and exotic domain name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="pie-bowse">
+            <div class="content-lemaAd">
+                <div class="content-info">
+                    <div class="nav-logo">
+                        <img src="../imgs/logo.svg" alt="" class="logo-img">
+                        <p class="logo-name">Bonfida</p>
+                    </div>
+                    <ul class="List-pie">
+                        <li>Browse domains</li>
+                        <li>Learn</li>
+                        <li>Build</li>
+                        <li>Community</li>
+                        <li>Governance</li>
+                    </ul>
+                    <div class="redes">
+                        <span>Help</span>
+                        <img src="../imgs/telegram.svg" alt="">
+                        <img src="../imgs/twitter.svg" alt="">
+                        <img src="../imgs/discord.svg" alt="">
+                    </div>
+                </div>
+                <p class="lema">This web site is hosted on IPFS and is not available in the United States or other
+                    prohibited
+                    jurisdictions</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../funcionalidad.js"></script>
+</body>
+
+</html>

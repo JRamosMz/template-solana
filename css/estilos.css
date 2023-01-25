@@ -102,22 +102,16 @@
  .campana:hover {
    background: #03001a;
  }
- .pestaña-campana.open {
-  max-height: 100;
-  overflow:visible;
- }
 /* EDECTO DEL BOTON CAMPANA DEL NAV */
 
  .pestaña-campana {
   position: absolute;
-  max-height: 0;
-  overflow: hidden;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.407);
   backdrop-filter: blur(10px);
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
  }
 
  .contenido-pestaña {
@@ -498,11 +492,37 @@
 }
 
 .add-car {
-  width: fit-content;
+  width: 200px;
+  font-size: 17px;
+  font-weight: 600;
   padding: 20px 40px;
   border: none;
-  border-radius: 20px 40px;
+  border-radius: 20px ;
   background-image: linear-gradient(120deg, #05eaff 0%, #d2ff0c 100%);
+}
+
+.car-impose {
+  position: absolute;
+  bottom: 41px;
+  left: 3px;
+  width: 194px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 17px;
+  border: none;
+  border-radius: 20px ;
+  background-color: #04011a;
+  display: none;
+  overflow: hidden;
+}
+.car-impose.open2 {
+  display: block;
+}
+.car-impose img {
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
 }
 
 .divid-content_principal {
