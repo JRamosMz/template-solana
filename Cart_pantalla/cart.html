@@ -53,7 +53,24 @@
                     <hr>
                     <button class="campana"><img src="../imgs/campana.svg" alt=""></button>
                     <hr>
-                    <div class="content-wallet"><button class="boton-conectWallet" onclick="conectWallet()">Connect Walltet</button></div>
+                    <div class="content-wallet"  id="boton-conectWallet"><button class="boton-conectWallet" onclick="conectWallet()">Connect Walltet</button></div>
+                    <div class="content-boton_sesion_iniciada" id="content-boton_sesion_iniciada">
+                        <button class="boton-sesion_iniciada" onclick="ClickPerfil()">
+                            <img src="../imgs/robot.svg" alt="">
+                            <p id="nombreEscr"></p>
+                        </button>
+                    </div>
+
+
+
+                    <div class="sections-perfil" id="sections-perfil">
+                        <p onclick="location.href='../Perfil_pantalla/perfil.html'">View profile</p>
+                        <p>Change wallet</p> 
+                        <hr class="divid2">
+                        <p>Disconnect</p>
+                    </div>
+
+
                     <div class="border-carrito_comprar">
                         <button class="carrito"><img src="../imgs/carrito.svg" alt=""></button>
                     </div>
@@ -61,14 +78,24 @@
             </div>
         </nav>
         <div class="small-screen" id="small_creen">
-            <div class="content-small_screen">
+            <div class="content-small_screen" id="contentsmall_screen">
                 <div class="ent-small_screen">
-                    <button class="salir-small_screen" onclick="salir_small_screen()">X</button>
-                    <h3 class="title-small_screen">You'll need a wallet on <br>Solana to continue</h3>
+                    <button class="salir-small_screen" onclick="salir_small_screen()" id="salirsmall_screen">X</button>
+                    <h3 class="title-small_screen" id="titlesmall_screen">You'll need a wallet on <br>Solana to continue</h3>
                 </div>
-                <img src="../imgs/Captura de pantalla 2023-01-23 155123.png" alt="" class="img-small_screen">
-                <button class="button-small_screen">Get started</button>
-                <a href="#" class="options-small_screen">Already have a wallet? View options <div class="triangulo"></div></a>
+                <img src="../imgs/Captura de pantalla 2023-01-23 155123.png" alt="" class="img-small_screen" id="imgsmall_screen">
+                <div class="lds-roller" id="lds-rotator">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button class="button-small_screen" onclick="getStart2()" id="get_Start">Get started</button>
+                <a href="#" class="options-small_screen" id="optionssmall_screen">Already have a wallet? View options <div class="triangulo"></div></a>
             </div>
         </div>
     </header>
@@ -179,7 +206,7 @@
             </div>
         </div>
     </footer>
-    <script src="../funcionalidad.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Bonfida</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="content-nav" id="cont-nav">
+                <div class="nav-logo">
+                    <img src="../imgs/logo.svg" alt="" class="logo-img">
+                    <p class="logo-name">Bonfida</p>
+                </div>
+                <div class="content-list">
+                    <ul class="list-menu">
+                        <div class="menuBrowse">
+                            <a href="#" class="enlace" onclick="toggleAper()">Browse domains</a>
+                            <div class="menu-hidden" id="enlaceBrowse">
+                                <a href="#">
+                                    <h3>Categories</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Listed</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Autocioned</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Stastics</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="enlace">Learn</a>
+                        <a href="#" class="enlace">Build</a>
+                        <a href="#" class="enlace">Community</a>
+                        <a href="#" class="enlace">Twitter</a>
+                    </ul>
+                </div>
+                <div class="botones">
+                    <div class="buscador"><input type="text" class="buscador-letter"><img src="../imgs/search.svg"
+                            alt="">
+                    </div>
+                    <hr>
+                    <button class="campana"><img src="../imgs/campana.svg" alt=""></button>
+                    <hr>
+                    <div class="content-boton_sesion_iniciada" id="content-boton_sesion_iniciada">
+                        <button class="boton-sesion_iniciada" onclick="ClickPerfil()">
+                            <img src="../imgs/robot.svg" alt="">
+                            <p id="nombreEscr"></p>
+                        </button>
+                    </div>
+                    <div class="sections-perfil" id="sections-perfil">
+                        <p onclick="location.href='../Perfil_pantalla/perfil.html'">View profile</p>
+                        <p>Change wallet</p>
+                        <hr>
+                        <p>Disconnect</p>
+                    </div>
+                    <button class="carrito"><img src="../imgs/carrito.svg" alt=""></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="content-perfil_screen">
+            <div class="perfil-screen">
+                <div class="content-bar-options">
+                    <div class="init-options_sesion">
+                        <h1 class="title-nombre_user" id="nombreEscr2"></h1>
+                        <button class="perfil-connect_twitter"><img src="../imgs/twitter.svg" alt="">
+                            <p>connect to twitter</p>
+                        </button>
+                        <button class="options_bar_perfil"><img src="../imgs/carpeta.webp" alt="">
+                            <p id="nombreEscr3"></p>
+                        </button>
+                    </div>
+                    <div class="option-final_toShare"><img src="../imgs/conectar.webp" alt=""></div>
+                </div>
+                <div class="second-row_content_bar_options">
+                    <div class="second-row_actions">
+                        <p onclick="detallesuno()" id="bot1" class="boton boton1">Collection</p>
+                        <p onclick="detallesdos()" id="bot2" class="boton boton2">Bookmarked</p>
+                        <p onclick="detallestres()" id="bot3" class="boton boton3">Offers</p>
+                        <p onclick="detallescuatro()" id="bot4" class="boton boton4">Listings</p>
+                    </div>
+                    <div class="secon-row_options-individual">
+                        <div class="option-circle"><img src="../imgs/etiqueta.svg" alt=""></div>
+                        <div class="option-circle"><img src="../imgs/enviar.webp" alt=""></div>
+                        <div class="option-circle"><img src="../imgs/search.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="options-detail1" id="options-detail1">
+                    <p class="botonOP botonOP1" id="bOT1" onclick="optionDetail1">Show all</p>
+                    <hr class="divid">
+                    <p class="botonOP botonOP2" id="bOT2" onclick="optionDetail2">Domains</p>
+                    <p class="botonOP botonOP3" id="bOT3" onclick="optionDetail3">Subdomains</p>
+                    <p class="botonOP botonOP4" id="bOT4" onclick="optionDetail4">NFTs</p>
+                </div>
+                <div class="content-contenido cont-contenido1" id="cont-contenido1">
+                    <div class="content-contenido_adg">
+                        <h3>Buy and collect domains today 🛒</h3>
+                        <p>Domains that you bookmark will appear here</p>
+                        <div class="browse-domains">
+                            <button class="button-browse_domains">Browse domains</button>
+                        </div>
+                    </div>
+                    <img src="../imgs/CuadrH.webp" alt="">
+                    <img src="../imgs/CuadrH.webp" alt="">
+                </div>
+                <div class="content-contenido cont-contenido2" id="cont-contenido2">
+                    <div class="content-contenido_adg">
+                        <h3>Save domains to keep an eye on it 👀</h3>
+                        <p>Domains that you bookmark will appear here</p>
+                        <div class="browse-domains">
+                            <button class="button-browse_domains">Browse domains</button>
+                        </div>
+                    </div>
+                    <img src="../imgs/cuadros.webp" alt="">
+                    <img src="../imgs/cuadros.webp" alt="">
+                </div>
+                <div class="contenedores-texts ct-1" id="contenedores-texts">
+                    <div class="datosText dt1">
+                        <h1>Offers received</h1>
+                        <p>No offer found</p>
+                    </div>
+                    <div class="datosText dt2">
+                        <h1>Offers made</h1>
+                        <p>No offer found</p>
+                    </div>
+                    <div class="datosText dt3">
+                        <h3>Bids placed</h3> 
+                    </div>
+                </div>
+                <div class="contenedores-texts ct-2" id="contenedores-texts_2">
+                    <div class="datosText dt1">
+                        <h1>Auctions</h1>
+                        <p>No auction listing found</p>
+                    </div>
+                    <div class="datosText dt2">
+                        <h1>Fixed price resell</h1>
+                        <p>No fixed price listing found</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="pie-bowse">
+                <div class="content-lemaAd">
+                    <div class="content-info">
+                        <div class="nav-logo">
+                            <img src="../imgs/logo.svg" alt="" class="logo-img">
+                            <p class="logo-name">Bonfida</p>
+                        </div>
+                        <ul class="List-pie">
+                            <li>Browse domains</li>
+                            <li>Learn</li>
+                            <li>Build</li>
+                            <li>Community</li>
+                            <li>Governance</li>
+                        </ul>
+                        <div class="redes">
+                            <span>Help</span>
+                            <img src="../imgs/telegram.svg" alt="">
+                            <img src="../imgs/twitter.svg" alt="">
+                            <img src="../imgs/discord.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="lema">This web site is hosted on IPFS and is not available in the United States or other
+                        prohibited
+                        jurisdictions</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="perfil.js"></script>
+
+</body>
+
+</html>
